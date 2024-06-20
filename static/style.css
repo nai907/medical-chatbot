@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.chatbot {
+    padding: 20px;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.version {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chat-container {
+    margin-bottom: 20px;
+}
+
+.user-message, .bot-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-message .user-icon, .bot-message .bot-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.user-message {
+    justify-content: flex-start;
+}
+
+.bot-message {
+    justify-content: flex-start;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bot-message a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.feedback {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.feedback span {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.message-input {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.message-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.message-input button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* New CSS for adjusting the image sizes */
+.img_cont_msg img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.msg_cotainer, .msg_cotainer_send {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.msg_cotainer {
+    background-color: #f0f0f0;
+    margin-left: 10px;
+}
+
+.msg_cotainer_send {
+    background-color: #d1e7dd;
+    margin-right: 10px;
+}
+
+.msg_time, .msg_time_send {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+    display: block;
+}
